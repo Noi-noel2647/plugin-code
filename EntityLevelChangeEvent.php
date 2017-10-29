@@ -49,7 +49,7 @@ class Main extends PluginBase implements Listener {
 
 			if($entity instanceof Player){	//$entityがPlayerオブジェクトか比較
 
-				$entity->addTitle("Title", "SubTitle", 10, 20, 10);	//$entityにTitleメッセージの送信
+				$entity->addTitle("Title", "SubTitle", 10, 20, 10);	//$entity(Player)にTitleメッセージの送信
 
 			}
 		}
