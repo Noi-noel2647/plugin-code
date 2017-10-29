@@ -41,7 +41,7 @@ class Main extends PluginBase implements Listener {
 
  		$entity = $event->getEntity();	//移動したEntity (Entityオブジェクト)
 
-		$name = $this->world->get("ワールド名");
+		$name = $this->world->get("ワールド名");	//Configオブジェクトからキー("ワールド名")の値("world")を取得
 
 		if($name2 == $name){	//$name2が$nameかどうか比較
 
