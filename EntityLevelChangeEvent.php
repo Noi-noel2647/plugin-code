@@ -21,7 +21,6 @@ class Main extends PluginBase implements Listener {
 
 		if(!file_exists($this->getDataFolder())){
 			mkdir($this->getDataFolder(), 0744, true);
-
 		}
 
 		$this->world = new Config($this->getDataFolder() . "config.yml", Config::YAML, array("ワールド名" => "world"));
