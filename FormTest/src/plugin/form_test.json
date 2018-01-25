@@ -1,7 +1,7 @@
 {
 	"type":"modal",
-	"title":"§lWelcome to §a春風 §9-HaruKaze- §eServer",
+	"title":"§lWelcome to §eServer",
 	"content":"テキストを入力...",
 	"button1":"\n初めての方はこちらより",
-	"button2":"\n初めてではない方はここをタップ",
+	"button2":"\n初めてではない方はここをタップ"
 }
