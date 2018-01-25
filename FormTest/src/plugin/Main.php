@@ -19,7 +19,7 @@ class Main extends PluginBase implements Listener{
 
 		$dirname = dirname(__FILE__);
 		$json = file_get_contents($dirname."/form_test.json");
-		$this->data = json_encode($json);
+		$this->data = json_encode(json_encode($json));
 
 	}
 
