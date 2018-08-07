@@ -1,6 +1,7 @@
 <?php
 
 
+
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\utils\Config;
@@ -18,13 +19,13 @@ class FloatingText extends PluginBase implements Listener {
 
 	public function onEnable(){
 
-		$x = (float) 128;		//•‚‚«•¶š‚ª•\¦‚³‚ê‚é xÀ•W
-		$y = (float) 8;			//•‚‚«•¶š‚ª•\¦‚³‚ê‚é yÀ•W
-		$z = (float) 128;		//•‚‚«•¶š‚ª•\¦‚³‚ê‚é zÀ•W
+		$x = (float) 128;		//æµ®ãæ–‡å­—ãŒè¡¨ç¤ºã•ã‚Œã‚‹ xåº§æ¨™
+		$y = (float) 8;			//æµ®ãæ–‡å­—ãŒè¡¨ç¤ºã•ã‚Œã‚‹ yåº§æ¨™
+		$z = (float) 128;		//æµ®ãæ–‡å­—ãŒè¡¨ç¤ºã•ã‚Œã‚‹ zåº§æ¨™
 
-		$eid = Entity::$entityCount++;	//EntityID (ŒÅ’è‚ª—Ç‚¢)
-		$name = "FloatingText";		//•‚‚«•¶š 
-		$pos = new Vector3($x, $y, $z);	//vector3 ƒIƒuƒWƒFƒNƒg
+		$eid = Entity::$entityCount++;	//EntityID (å›ºå®šãŒè‰¯ã„)
+		$name = "FloatingText";		//æµ®ãæ–‡å­— 
+		$pos = new Vector3($x, $y, $z);	//vector3 ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 
 		$pk = new AddPlayerPacket();
 
@@ -33,7 +34,7 @@ class FloatingText extends PluginBase implements Listener {
 			$pk->entityUniqueId = $eid;
 			$pk->entityRuntimeId = $eid;
 			$pk->position = $pos;
-			$pk->item = Item::get(Item::AIR);	//‚¿•¨‚Í"‚È‚µ"‚È‚Ì‚Å AIR
+			$pk->item = Item::get(Item::AIR);	//æŒã¡ç‰©ã¯"ãªã—"ãªã®ã§ AIR
 
 			$flags =
 				 1 << Entity::DATA_FLAG_CAN_SHOW_NAMETAG |
@@ -51,7 +52,7 @@ class FloatingText extends PluginBase implements Listener {
 
 
 	public function onJoin(PlayerJoinEvent $event){
-		$event->getPlayer()->dataPacket($this->FloatInfo);	//PlayerQ‰Á‚É•‚‚«•¶š(Packet)‚ğ‘—M
+		$event->getPlayer()->dataPacket($this->FloatInfo);	//Playerå‚åŠ æ™‚ã«æµ®ãæ–‡å­—(Packet)ã‚’é€ä¿¡
 
 	}
 
